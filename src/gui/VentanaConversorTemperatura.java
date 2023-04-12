@@ -1,7 +1,9 @@
 package gui;
 
-import java.awt.EventQueue;
+import java.awt.Color;
 import java.awt.Font;
+import java.awt.SystemColor;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,10 +19,6 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import conversorTemperatura.OperacionesTemp;
-import java.awt.Toolkit;
-import java.awt.SystemColor;
-import java.awt.Color;
-import java.awt.Window.Type;
 
 public class VentanaConversorTemperatura extends JFrame implements ActionListener {
 

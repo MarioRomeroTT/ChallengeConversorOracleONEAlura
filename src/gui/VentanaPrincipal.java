@@ -1,25 +1,19 @@
 package gui;
 
-import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import conversorDivisa.OperacionesDivisa;
-
-import java.awt.Color;
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.SwingConstants;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.SystemColor;
-import javax.swing.UIManager;
-import java.awt.Toolkit;
-import java.awt.Window.Type;
-import java.awt.Dialog.ModalExclusionType;
-import javax.swing.ImageIcon;
 
 public class VentanaPrincipal extends JFrame implements ActionListener{
 
@@ -57,13 +51,13 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 		
 		btnDivisa = new JButton("DIVISAS");
 		btnDivisa.setIcon(new ImageIcon(VentanaPrincipal.class.getResource("/imagenes/iconCambio.png")));
-		btnDivisa.setBounds(76, 143, 131, 30);
+		btnDivisa.setBounds(47, 143, 146, 30);
 		btnDivisa.addActionListener(this);
 		panelPrincial.add(btnDivisa);
 		
 		btnTemperatura = new JButton("TEMPERATURA");
 		btnTemperatura.setIcon(new ImageIcon(VentanaPrincipal.class.getResource("/imagenes/iconTemp.png")));
-		btnTemperatura.setBounds(223, 143, 131, 30);
+		btnTemperatura.setBounds(242, 143, 146, 30);
 		btnTemperatura.addActionListener(this);
 		panelPrincial.add(btnTemperatura);
 		
